@@ -1,0 +1,7 @@
+anthropic>=0.40.0
+pyyaml>=6.0
+rich>=13.0
+python-dotenv>=1.0
+pywebview>=5.0
+requests>=2.31
+pyobjc-framework-ApplicationServices>=10.0
