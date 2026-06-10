@@ -1,0 +1,126 @@
+# Logic Pro key-command registry — single source of truth.
+# Claude's tools are generated from this file.
+#
+# keys:  "modifier+modifier+key" or a list of those for multi-step macros.
+#        Modifiers: cmd, opt, shift, ctrl. Special keys: space, return, tab,
+#        escape, delete, up, down, left, right.
+# risk:  low    = fires immediately
+#        medium = assistant confirms with you first
+# delay: seconds between steps in a multi-step macro (default 0.3)
+#
+# Verify each against YOUR install: Logic Pro → Settings → Key Commands (Opt+K).
+
+# ── Transport ────────────────────────────────────────────────
+play_stop:
+  keys: space
+  desc: Toggle play/stop
+  risk: low
+
+record:
+  keys: r
+  desc: Start recording
+  risk: medium
+
+go_to_start:
+  keys: return
+  desc: Move playhead to the beginning of the project
+  risk: low
+
+toggle_cycle:
+  keys: c
+  desc: Toggle cycle (loop) mode on/off
+  risk: low
+
+set_locators_to_selection:
+  keys: u
+  desc: Set cycle locators to match the selected region (use before toggle_cycle to loop a selection)
+  risk: low
+
+toggle_metronome:
+  keys: k
+  desc: Toggle metronome click on/off
+  risk: low
+
+# ── Tracks ───────────────────────────────────────────────────
+new_audio_track:
+  keys: cmd+opt+a
+  desc: Create a new audio track
+  risk: low
+
+new_instrument_track:
+  keys: cmd+opt+s
+  desc: Create a new software instrument track
+  risk: low
+
+duplicate_track:
+  keys: cmd+d
+  desc: Duplicate the selected track (same settings)
+  risk: low
+
+select_next_track:
+  keys: down
+  desc: Select the next track (one below current)
+  risk: low
+
+select_prev_track:
+  keys: up
+  desc: Select the previous track (one above current)
+  risk: low
+
+mute_track:
+  keys: m
+  desc: Toggle mute on the selected track
+  risk: low
+
+solo_track:
+  keys: s
+  desc: Toggle solo on the selected track
+  risk: low
+
+# ── Views / editors ──────────────────────────────────────────
+open_mixer:
+  keys: x
+  desc: Show/hide the mixer
+  risk: low
+
+open_piano_roll:
+  keys: p
+  desc: Show/hide the piano roll editor
+  risk: low
+
+open_library:
+  keys: y
+  desc: Show/hide the library (instrument patches and presets)
+  risk: low
+
+open_smart_controls:
+  keys: b
+  desc: Show/hide smart controls
+  risk: low
+
+# ── Editing ──────────────────────────────────────────────────
+undo:
+  keys: cmd+z
+  desc: Undo the last action
+  risk: medium
+
+redo:
+  keys: cmd+shift+z
+  desc: Redo the last undone action
+  risk: medium
+
+quantize:
+  keys: q
+  desc: Quantize selected MIDI events (toggle)
+  risk: low
+
+# ── Project ──────────────────────────────────────────────────
+save:
+  keys: cmd+s
+  desc: Save the project
+  risk: low
+
+bounce:
+  keys: cmd+b
+  desc: Open the bounce/export dialog for the project
+  risk: medium
